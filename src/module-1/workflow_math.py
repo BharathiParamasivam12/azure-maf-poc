@@ -42,7 +42,7 @@ async def math_workflow(problem: str) -> str:
 async def main() -> None:
     problem = "What is the square root of 16?"
     result = await math_workflow.run(problem)
-    print(result.text)
+    print(result)
 
 if __name__ == "__main__":
     asyncio.run(main())
